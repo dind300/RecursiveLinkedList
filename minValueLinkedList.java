@@ -16,8 +16,9 @@ public class minValueLinkedList {
 		if(node==null) {
 			return 0;
 		}
-		if(node.getNext()==null)
+		if(node.getNext()==null){
 			return node.getValue();
+		}
 		
 	    return Math.min(minLinkedList(node.getNext()),node.getValue());
 
