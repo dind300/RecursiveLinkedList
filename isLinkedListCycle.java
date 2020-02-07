@@ -12,7 +12,6 @@ public class isLinkedListCycle {
 	public static boolean isLinkedListCycle(Node node) {
 		Node pointer1=node;
 		Node pointer2=node;
-		boolean flag=false;
 		while(pointer2.getNext()!=null) {
 			pointer1=pointer1.getNext();
 			pointer2=pointer2.getNext().getNext();
