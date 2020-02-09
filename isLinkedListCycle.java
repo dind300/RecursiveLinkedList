@@ -13,8 +13,8 @@ public class isLinkedListCycle {
 	public static boolean isLinkedListCycle(Node node) {
 		Node pointer1=node;
 		Node pointer2=node;
-		boolean flag=false;
-		while(!flag) {
+		
+		while(pointer2!=null) {
 			pointer2=pointer2.getNext();
 			if(pointer1==pointer2) {
 				return true;
